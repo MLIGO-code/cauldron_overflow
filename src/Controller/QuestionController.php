@@ -39,12 +39,10 @@ class QuestionController extends AbstractController
      */
     public function show($slug, MarkdownHelper $markdownHelper ,
                         HubInterface $sentryHub){
-        dump($sentryHub);
+
         if($this->isDebug)
             $this->debugger->info("We are in debug mode");
 
-
-        throw new \Exception('bad stuff habhppenedssssss');
 
         $questionText='I\'ve been turned into a cat, any *thoughts* on how to turn back? While I\'m **adorable**, I don\'t really care for cat food.';
 
