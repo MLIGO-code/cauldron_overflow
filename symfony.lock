@@ -38,6 +38,12 @@
     "monolog/monolog": {
         "version": "2.3.2"
     },
+    "paragonie/random_compat": {
+        "version": "v9.99.100"
+    },
+    "paragonie/sodium_compat": {
+        "version": "v1.16.1"
+    },
     "php-http/client-common": {
         "version": "2.4.0"
     },

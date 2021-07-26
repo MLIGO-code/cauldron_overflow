@@ -8,6 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "knplabs/knp-markdown-bundle": "^1.9",
+        "paragonie/sodium_compat": "^1.16",
         "sensio/framework-extra-bundle": "^6.1",
         "sensiolabs/security-checker": "^6.0",
         "sentry/sentry-symfony": "^4.1",
