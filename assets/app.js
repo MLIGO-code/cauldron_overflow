@@ -11,6 +11,8 @@ import './styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 
+import $ from 'jquery';
+
 var $container = $('.js-vote-arrows');
 $container.find('a').on('click', function(e) {
     e.preventDefault();

@@ -2,5 +2,6 @@
 <project version="4">
   <component name="Symfony2PluginSettings">
     <option name="directoryToWeb" value="public" />
+    <option name="pluginEnabled" value="true" />
   </component>
 </project>

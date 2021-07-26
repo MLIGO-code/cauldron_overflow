@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use App\Service\MarkdownHelper;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -14,7 +15,7 @@ class QuestionController extends AbstractController
     /**
      * @Route("/", name="app_homepage")
      */
-    public function homepage(Environment $twigEnvironment)
+    public function homepage()
     {
         /*fancy way of using Twig service
         $html=$twigEnvironment->render('question/homepage.html.twig');
@@ -26,15 +27,21 @@ class QuestionController extends AbstractController
     /**
      * @Route("/questions/{slug}", name="app_question_show")
      */
-    public function show($slug){
-        dump($slug, $this);
+    public function show($slug, MarkdownHelper $markdownHelper){
+        dump($this->getParameter('cache_adapter'));
+        $questionText='I\'ve been turned into a cat, any *thoughts* on how to turn back? While I\'m **adorable**, I don\'t really care for cat food.';
+
        $answers=[
-           'Make sure your cat is sitting purrfectly still xD',
+           'Make sure your cat is sitting `purrfectly` still xD',
            'Honestly , I like furry shoes better than MY cat',
            'Maybe ... you try saying the spell backwards???'
        ];
+
+        $parsedQuestionText=$markdownHelper->parse($questionText);
+
         return $this->render('question/show.html.twig',[
             'question' => ucwords(str_replace('-',' ',$slug)),
+            'questionText' => $parsedQuestionText,
             'answers' => $answers,
         ]);
 
