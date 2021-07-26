@@ -43,7 +43,6 @@ class QuestionController extends AbstractController
         if($this->isDebug)
             $this->debugger->info("We are in debug mode");
 
-
         $questionText='I\'ve been turned into a cat, any *thoughts* on how to turn back? While I\'m **adorable**, I don\'t really care for cat food.';
 
        $answers=[
