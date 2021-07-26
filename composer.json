@@ -10,6 +10,7 @@
         "knplabs/knp-markdown-bundle": "^1.9",
         "sensio/framework-extra-bundle": "^6.1",
         "sensiolabs/security-checker": "^6.0",
+        "sentry/sentry-symfony": "^4.1",
         "symfony/asset": "5.3.*",
         "symfony/console": "5.3.*",
         "symfony/debug-bundle": "5.3.*",
@@ -66,7 +67,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
+            "allow-contrib": true,
             "require": "5.3.*"
         }
     }
