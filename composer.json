@@ -17,6 +17,7 @@
         "sensio/framework-extra-bundle": "^6.1",
         "sensiolabs/security-checker": "^6.0",
         "sentry/sentry-symfony": "^4.1",
+        "stof/doctrine-extensions-bundle": "^1.6",
         "symfony/asset": "5.3.*",
         "symfony/console": "5.3.*",
         "symfony/debug-bundle": "5.3.*",
@@ -80,6 +81,7 @@
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.4",
-        "symfony/maker-bundle": "^1.33"
+        "symfony/maker-bundle": "^1.33",
+        "zenstruck/foundry": "^1.12"
     }
 }
